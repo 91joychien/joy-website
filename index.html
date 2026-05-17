@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -522,6 +522,14 @@
       .card.tall { grid-row: span 1; }
       footer { flex-direction: column; gap: 12px; padding: 20px; text-align: center; }
     }
+    @keyframes float1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes float2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
   </style>
 </head>
 <body>
@@ -560,14 +568,14 @@
     </div>
 
     <div class="hero-right">
-      <div class="photo-card" style="padding: 0; background: transparent; border: none; margin-left: auto; margin-right: 24px; width: 260px; height: 320px; overflow: visible; box-shadow: none;">
+      <div class="photo-card" style="padding: 0; background: transparent; border: none; margin-left: auto; margin-right: 24px; width: 280px; height: 360px; overflow: visible; box-shadow: none;">
         <img src="profilepic.jpg" alt="Joy Chien" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 24px 80px rgba(100, 70, 170, 0.45), 0 12px 32px rgba(0,0,0,0.25);" />
       </div>
-      <div class="float-tag t1">
+      <div class="float-tag t1" style="top: -16px; right: -24px; animation: float1 3s ease-in-out infinite;">
         <div class="ft-icon" style="background:#ede0ff;">🧠</div>
         Neuroscience research
       </div>
-      <div class="float-tag t2">
+      <div class="float-tag t2" style="bottom: 40px; left: -24px; animation: float2 3.5s ease-in-out infinite;">
         <div class="ft-icon" style="background:#e0f0ff;">🐍</div>
         Python enthusiast
       </div>
